@@ -13,7 +13,7 @@ from fake_useragent import UserAgent
 x_deployment_id = os.getenv('X_DEPLOYMENT_ID')
 userid = os.getenv('USERID')
 passwd = os.getenv('PASSWD')
-hostname = os.getenv('HOSTNAME')
+hostname = os.getenv('DB_HOSTNAME')
 def get_soup_retry(url):
     ua = UserAgent()
     uag_random = ua.random

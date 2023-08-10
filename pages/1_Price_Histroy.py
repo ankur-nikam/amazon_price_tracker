@@ -9,7 +9,7 @@ load_dotenv()
 x_deployment_id = os.getenv('X_DEPLOYMENT_ID')
 userid = os.getenv('USERID')
 passwd = os.getenv('PASSWD')
-hostname = os.getenv('HOSTNAME')
+hostname = os.getenv('DB_HOSTNAME')
 api = "/dbapi/v4/"
 host = 'https://' + hostname + api
 service = 'auth/tokens'
