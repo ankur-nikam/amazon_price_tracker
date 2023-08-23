@@ -46,10 +46,8 @@ def get_soup_retry(url):
         soup = bs(page.content, 'html5lib')
         if 'captcha' in str(soup):
             uag_random = ua.random
-            print(f'\rBot has been detected... retrying ... use new identity: {uag_random} ', end='', flush=True)
             continue
         else:
-            print('Bot bypassed')
             return soup
 
 def get_data( url: str):
