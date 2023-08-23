@@ -9,6 +9,8 @@ import requests
 import requests as rq
 from bs4 import BeautifulSoup as bs
 from fake_useragent import UserAgent
+from dotenv import load_dotenv
+load_dotenv()
 
 x_deployment_id = os.getenv('X_DEPLOYMENT_ID')
 userid = os.getenv('USERID')
